@@ -1,0 +1,40 @@
+:root {
+	--canvas: #FCFAF6;
+	--paper: #F7F1E8;
+	--paper-deep: #EFE6D8;
+	--wash: #F2EADD;
+	--cream-brand: #F5EFE6;
+	--line: #E3D8C7;
+	--line-strong: #8F806D;
+
+	--sage-200: #DFE7E0;
+	--sage-700: #7DA99A;
+	--dusty-blue: #9BBEC8;
+	--dusty-blue-100: #E2ECEE;
+
+	--accent: #CB3910;
+	--accent-hover: #A82D0C;
+	--accent-brand: #E8391C;
+	--on-accent: #FFFFFF;
+
+	--ink: #1F1B16;
+	--ink-muted: #5C5C5C;
+
+	--font-display: 'Instrument Serif', 'Times New Roman', serif;
+	--font-body: 'Poppins', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+	--radius-card: 24px;
+	--radius-btn: 40px;
+	--radius-nav: 12px;
+	--radius-pill: 9999px;
+
+	--shadow-float: 0 40px 80px -36px rgba(74, 52, 30, 0.28);
+
+	--container: 1280px;
+	--gutter: clamp(1rem, 4vw, 2.5rem);
+	--nav-height: 76px;
+
+	--transition-fast: 0.18s ease;
+	--transition-base: 0.3s ease;
+}
