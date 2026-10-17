@@ -37,4 +37,7 @@
 
 	--transition-fast: 0.18s ease;
 	--transition-base: 0.3s ease;
+	--ease-editorial: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+	--ervi-dir: 1;
 }

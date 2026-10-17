@@ -184,6 +184,37 @@ ul { list-style: none; }
 
 .has-js .reveal.is-revealed { opacity: 1; transform: none; }
 
+.ervi { display: block; width: 100%; height: auto; pointer-events: none; }
+
+.ervi-wrap { display: block; transform-origin: 50% 92%; }
+
+.ervi-wrap--land { animation: ervi-land 1.2s 0.3s both; }
+
+.has-js .is-revealed .ervi-wrap--walk { animation: ervi-walk 1.8s 0.25s both; }
+.has-js .is-revealed .ervi-wrap--bow { animation: ervi-bow 2.2s 0.6s both; }
+
+@keyframes ervi-land {
+	0% { opacity: 0; transform: translateY(-40px); animation-timing-function: var(--ease-editorial); }
+	30% { opacity: 1; }
+	74% { transform: translateY(0) scale(1.025, 0.975); animation-timing-function: ease-out; }
+	100% { opacity: 1; transform: none; }
+}
+
+@keyframes ervi-walk {
+	0% { opacity: 0; transform: translateX(calc(var(--ervi-dir) * 56px)); animation-timing-function: ease-in-out; }
+	18% { opacity: 1; }
+	36% { transform: translateX(calc(var(--ervi-dir) * 34px)) rotate(calc(var(--ervi-dir) * -2deg)); animation-timing-function: ease-in-out; }
+	68% { transform: translateX(calc(var(--ervi-dir) * 12px)) rotate(calc(var(--ervi-dir) * 2deg)); animation-timing-function: var(--ease-editorial); }
+	100% { opacity: 1; transform: none; }
+}
+
+@keyframes ervi-bow {
+	0% { transform: translateY(24%); animation-timing-function: var(--ease-editorial); }
+	32% { transform: none; animation-timing-function: ease-in-out; }
+	52%, 66% { transform: rotate(calc(var(--ervi-dir) * -6deg)); animation-timing-function: ease-in-out; }
+	100% { transform: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html { scroll-behavior: auto; }
 
@@ -194,4 +225,6 @@ ul { list-style: none; }
 	}
 
 	.has-js .reveal { opacity: 1; transform: none; }
+
+	.ervi-wrap { animation: none !important; }
 }
